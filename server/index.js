@@ -5,7 +5,7 @@ const compression = require('compression');
 const mongoose = require('mongoose');
 const config = require('./config');
 const apiConfig = require('../shared/config/server-config');
-const UserController = require('./route/routeUser');
+const ProductRoute = require('./route/ProductRoute');
 
 mongoose.connect(config.url, (err, db) => {
     if (err) {
@@ -28,7 +28,7 @@ server.use(function (req, res, next) {
     next();
 });
 
-server.use(UserController);
+server.use('/api',ProductRoute);
 
 server.listen(apiConfig.portServerNode, (err) => {
     if(err) {

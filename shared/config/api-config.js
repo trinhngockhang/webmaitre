@@ -1,1 +1,2 @@
-exports.FIND_USER_BY_USER_NAME = "/find-user-by-user-name";
+exports.FIND_PRODUCT = "/find-product";
+exports.CREATE_PRODUCT = "/create-product";
