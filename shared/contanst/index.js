@@ -1,0 +1,2 @@
+exports.API_STATUS_SUCCESS = 1;
+exports.API_STATUS_FAILURE = 0;
