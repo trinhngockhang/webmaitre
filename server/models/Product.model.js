@@ -6,10 +6,10 @@ var ProductSchema = mongoose.Schema({
     price: { type: Number },
     description: { type : String },
     parent : { type: mongoose.Schema.Types.ObjectId, ref: "Category" },
-    discount: { type: Number },
+    discount: { type: Number,default:0 },
     status: Number,
     index: Number,
-    view: Number
+    view: {type: Number,default:0}
 });
 
 module.exports = mongoose.model('Product', ProductSchema);
