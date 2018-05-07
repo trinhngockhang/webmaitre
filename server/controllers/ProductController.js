@@ -9,7 +9,7 @@ exports.findProductByName= function(req, res) {
 }
 
 exports.findProductByCategory= function(req, res) {
-    findByOption(ProductModel, {category : req.body.data }, (err, doc) => {
+    findByOption(ProductModel, {parent : req.body.data }, (err, doc) => {
         (err) ? onFailure(res, err) : onSuccess(res, doc);
     })
 }
