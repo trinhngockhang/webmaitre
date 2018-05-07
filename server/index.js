@@ -11,7 +11,7 @@ mongoose.connect(config.url, (err, db) => {
     if (err) {
         console.log(err);
     } else {
-        console.log('Connect DB success !', config.url);
+        console.log('Connect DB success !');
     }
 });
 

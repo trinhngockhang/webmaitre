@@ -2,9 +2,14 @@ var { findByOption,createProductByData} = require("../helper/query");
 var ProductModel = require('../models/ProductModel');
 var { onSuccess, onFailure } = require('../helper/response');
 
-exports.findProduct= function(req, res) {
-    var field = req.body.field;
-    findByOption(ProductModel, {field : req.body.data }, (err, doc) => {
+exports.findProductByName= function(req, res) {
+    findByOption(ProductModel, {name : req.body.data }, (err, doc) => {
+        (err) ? onFailure(res, err) : onSuccess(res, doc);
+    })
+}
+
+exports.findProductByCategory= function(req, res) {
+    findByOption(ProductModel, {category : req.body.data }, (err, doc) => {
         (err) ? onFailure(res, err) : onSuccess(res, doc);
     })
 }
