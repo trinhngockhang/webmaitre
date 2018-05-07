@@ -1,5 +1,5 @@
 var { findByOption,createProductByData} = require("../helper/query");
-var ProductModel = require('../models/ProductModel');
+var ProductModel = require('../models/Product.model');
 var { onSuccess, onFailure } = require('../helper/response');
 
 exports.findProductByName= function(req, res) {
