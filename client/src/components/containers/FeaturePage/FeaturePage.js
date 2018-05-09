@@ -105,6 +105,7 @@ export default class FeaturePageUi extends React.Component {
             <div>
                 <div>
                     <Head>
+                        <script src ="/static/js/fbsdk.js"></script>
                          <link href="/static/css/index.css" rel="stylesheet" ></link>
                         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato%3Aregular%2C700%2C400%2C700%7CDancing+Script%3Aregular%2Cdefault"
                         />
