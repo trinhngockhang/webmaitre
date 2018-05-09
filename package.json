@@ -8,7 +8,7 @@
     "run-client": "node client/server.js",
     "build": "next build client",
     "run-server": "nodemon server",
-    "start": "cross-env NODE_ENV=development nodemon client/server.js"
+    "start": "cross-env NODE_ENV=development node client/server.js"
   },
   "author": "anlancan",
   "license": "ISC",
