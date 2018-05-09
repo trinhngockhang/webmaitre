@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "run-client": "node client/server.js",
     "build": "next build client",
-    "run-server": "nodemon server"
+    "run-server": "nodemon server",
+    "start": "node client/server.js"
   },
   "author": "anlancan",
   "license": "ISC",

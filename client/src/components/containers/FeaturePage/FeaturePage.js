@@ -200,6 +200,11 @@ export default class FeaturePageUi extends React.Component {
                 {this.showDetail()}
                 {this.showDetailProducts()} 
                 {this.showFooter()}
+                <div id="fb-root"></div>
+                <div className="fb-customerchat"
+                attribution="setup_tool"
+                page_id="1235453253253754">
+                </div>
             </div>
         )
     }
