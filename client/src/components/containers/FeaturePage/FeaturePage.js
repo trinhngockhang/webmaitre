@@ -8,6 +8,14 @@ import Head from 'next/head';
 export default class FeaturePageUi extends React.Component {
     showHeader = () => Header();
     showContents = () => Content();
+    componentDidMount () {
+        const script = document.createElement("script");
+
+        script.src = "/static/js/fbsdk.js";
+        script.async = true;
+
+        document.body.appendChild(script);
+    }
     showContent = () => {
         return (
 
