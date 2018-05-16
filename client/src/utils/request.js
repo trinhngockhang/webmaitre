@@ -17,3 +17,7 @@ exports.findCategoryById = (data) => {
         })
     }
 } 
+
+exports.findProductByName = (data) => {
+    
+}
