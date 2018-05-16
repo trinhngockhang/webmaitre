@@ -1,6 +1,6 @@
 
 exports.findByOption = function(Model, option, cb) {
-    Model.find(option).exec((err, datas) => {
+    Model.find(option).populate('parent').exec((err, datas) => {
         cb(err, datas);
     })
 }
