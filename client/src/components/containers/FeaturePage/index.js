@@ -2,7 +2,7 @@ import FeaturePageUi from './FeaturePage';
 import connect from '../../../../store';
 import { findCategoryById } from '../../../utils/request';
 
-class FeaturePage {
+export class FeaturePage {
     mapStateToProps = (state) => {
         return {
             category: state.homeReducer.category

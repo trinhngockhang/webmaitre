@@ -1,3 +1,3 @@
-import FeaturePage from 'components/containers/FeaturePage';
+import HomePage from 'components/containers/HomePage';
 
-export default FeaturePage;
+export default HomePage;
