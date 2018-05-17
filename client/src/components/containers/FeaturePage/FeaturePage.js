@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Header } from '../../common/header';
+import Header from '../../common/header';
 import { Footer } from '../../common/footer';
 
 export default class FeaturePageUi extends React.Component {
-    showHeader = () => Header();
+    showHeader = () => <Header/>;
     showFooter = () => Footer();
     showContent = () => {
         return (
