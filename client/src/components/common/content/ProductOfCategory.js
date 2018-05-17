@@ -12,6 +12,11 @@ class ProductOfCategory extends Component {
                     <div className="pro-list owl-prolist">
                         {
                             products.map((s, i) => {
+                                if(this.props.parentLength - 1 == this.props.idx) {
+                                    if(!isEmptyOrUndefined(products) && i == (products.length - 1)) {
+                                        this.props.libary();
+                                    }
+                                }
                                 return (
                                     <div className="pro-item">
                                         <div className="bg-item">
