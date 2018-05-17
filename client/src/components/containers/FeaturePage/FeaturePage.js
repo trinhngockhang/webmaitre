@@ -4,6 +4,8 @@ import Header from '../../common/header';
 import { Footer } from '../../common/footer';
 
 export default class FeaturePageUi extends React.Component {
+    
+
     showHeader = () => <Header/>;
     showFooter = () => Footer();
     showContent = () => {
@@ -21,10 +23,12 @@ export default class FeaturePageUi extends React.Component {
                 <script src="/static/js/respond.min.js"></script>
                 <script type="text/javascript" src="/static/js/bootstrap.min.js"></script>       
                 <script type="text/javascript" src="/static/js/plugins.js"></script>   
-                <script type="text/javascript" src="/static/js/library.js"></script> 
+
             </div>
         )
     }
+
+    handleScipt = () => {}
 
     renderPage = () => {
         return (
@@ -42,6 +46,7 @@ export default class FeaturePageUi extends React.Component {
                     {this.showFooter()}
                 </div>
                 {this.showScript()}
+                {this.handleScipt()}
             </div>
         )
     }
