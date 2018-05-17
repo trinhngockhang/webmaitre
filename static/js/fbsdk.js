@@ -8,7 +8,7 @@ window.fbAsyncInit = function() {
     });
 };
 
-(function(d, s, id) {
+(function(d, s, id) { 
     console.log("aa");
     var js, fjs = d.getElementsByTagName(s)[0];
     if (d.getElementById(id)) return;
