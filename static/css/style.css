@@ -340,8 +340,9 @@ ul.pro-list-cate li .pro-item .bg-item .namepro { color: #333; }
 
 /* prodetail */
 .pd-left { flex: 0 0 45%; max-width: 45%; padding: 0 15px; }
-@media (max-width: 767px) { .pd-left { flex: 0 0 100%; max-width: 100%; padding: 0 15px; } }
+@media (max-width: 767px) { .pd-left { flex: 0 0 100%; max-width: 100%; padding: 0 15px; }
 .pro-list .pro-item {  width: 174px;}
+}
 .pd-right { flex: 0 0 55%; max-width: 55%; padding: 0 15px; }
 @media (max-width: 767px) { .pd-right { flex: 0 0 100%; max-width: 100%; } }
 .pd-right .collection { display: block; }
