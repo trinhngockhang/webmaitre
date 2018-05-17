@@ -79,7 +79,7 @@ export function libary() {
                 itemsDesktopSmall: [979, 3],
                 itemsTablet: [768, 2],
                 itemsTabletSmall: false,
-                itemsMobile: [580, 1],
+                itemsMobile: [580, 2],
                 autoPlay: true,
                 stopOnHover: true,
                 addClassActive: true,
