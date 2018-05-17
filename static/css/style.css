@@ -300,7 +300,7 @@ template { display: none; }
 .home-pro-top { padding: 40px 0 30px; background: #101216; }
 
 .pro-list { padding: 30px 0 80px; list-style: none; }
-.pro-list .pro-item { position: relative; text-align: center; color: #fff; padding: 0 15px; }
+.pro-list .pro-item { position: relative; text-align: center; color: #fff; padding: 0 15px; display:inline-block}
 .pro-list .pro-item .bg-item { background: url(../images/listing-models.jpg) no-repeat left bottom #000; background-size: 100%; }
 .pro-list .pro-item .namepro { display: -webkit-box; -webkit-box-orient: vertical; overflow: hidden; -webkit-line-clamp: 1; padding: 15px 0; color: #fff; font-size: 14px; font-weight: 400; text-transform: capitalize; text-decoration: none; line-height: 18px; }
 .pro-list .pro-item .namepro:hover { color: #FF6600; }
