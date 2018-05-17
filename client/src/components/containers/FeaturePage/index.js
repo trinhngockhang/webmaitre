@@ -1,17 +1,17 @@
 import FeaturePageUi from './FeaturePage';
 import connect from '../../../../store';
-import { findCategoryById } from '../../../utils/request';
+import { findProductByCategory } from '../../../utils/request';
 
 export class FeaturePage {
     mapStateToProps = (state) => {
         return {
-            category: state.homeReducer.category
+            categorys: state.categoryReducer.categorys,
         }
     }
     
     mapDispatchToProps = (dispatch) => {
         return {
-            findCategoryById: (id) => dispatch(findCategoryById(id))
+            findProductByCategory: (id) => dispatch(findProductByCategory(id))
         }
     }
 }
