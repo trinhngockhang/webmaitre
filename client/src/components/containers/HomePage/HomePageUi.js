@@ -3,8 +3,13 @@ import { SlideCarousel } from '../../common/content/SlideCarousel';
 import { SlideProAll } from '../../common/content/SlideProAll';
 import ProductOfCategory from "../../common/content/ProductOfCategory";
 import { isEmptyOrUndefined } from "../../../../../shared/helper/check-data";
+import { libary } from "../../../../../static/js/library";
 
 export default class HomePageUi extends FeaturePageUi {
+    state = {
+        isLoading: false
+    }
+
     componentWillReceiveProps(nextProps) {
         if(nextProps.categorys !== this.props.categorys) {
             if(!isEmptyOrUndefined(nextProps.categorys)) {
@@ -22,8 +27,9 @@ export default class HomePageUi extends FeaturePageUi {
                 { SlideCarousel() }
                 {
                     categorys.map((s, idx) => {
+                        let length = isEmptyOrUndefined(categorys) ? 0 : categorys.length;
                         return (
-                            <ProductOfCategory parenId={s._id} idx={idx} nameCategory={s.name}/>
+                            <ProductOfCategory libary={libary} parenId={s._id} parentLength={length} idx={idx} nameCategory={s.name}/>
                         )
                     })
                 }
