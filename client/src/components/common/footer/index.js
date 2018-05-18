@@ -21,7 +21,7 @@ export const Footer = () => {
                             <p className="">Tư Vấn Bán Hàng (8h - 20h hằng ngày)  <br/>
                             <a href="">024-6686-9898</a> 
                             </p>
-                            <p><img src="uploads/title-ft.png" alt=""/></p>
+                            <p><img src="/static/images/uploads/title-ft.png" alt=""/></p>
                             <p className="">ĐẠI LÝ G-SHOCK CHÍNH HÃNG UY TÍN - TOP 1 G-SHOCK TẠI VIỆT NAM TỪ 2011 </p>
                         </div> 
                         
