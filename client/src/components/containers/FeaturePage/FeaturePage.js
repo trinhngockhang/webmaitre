@@ -28,8 +28,6 @@ export default class FeaturePageUi extends React.Component {
         )
     }
 
-    handleScipt = () => {}
-
     renderPage = () => {
         return (
             <div>
@@ -46,7 +44,6 @@ export default class FeaturePageUi extends React.Component {
                     {this.showFooter()}
                 </div>
                 {this.showScript()}
-                {this.handleScipt()}
             </div>
         )
     }

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux'
-import { isEmptyOrUndefined } from '../../../../../shared/helper/check-data';
+import { isEmptyOrUndefined } from '../../../../../../shared/helper/check-data';
 
 class ProductOfCategory extends Component {
     render() {
@@ -22,7 +22,7 @@ class ProductOfCategory extends Component {
                                         <div className="bg-item">
                                             <div className="namepro">{s.name}</div>
                                             <div className="reponsive-img"> 
-                                                <a href=""><img src={s.url} className="lazy" alt=""/></a>   
+                                                <a href=""><img src={s.url} className="lazy" alt={this.props.nameCategory + "giá rẻ"}/></a>   
                                             </div>
                                             <div className="price">Liên hệ</div>
                                             <div className="cut-price">0000000000</div>
@@ -42,10 +42,10 @@ class ProductOfCategory extends Component {
 function mapStateToPropsFactory(state, ownProps) {
     return function mapStateToProps(state) {
         let products = isEmptyOrUndefined(state.productReducer.products) ? [] : state.productReducer.products.filter(s => s.parent._id == ownProps.parenId)
-      return {
-        products:
-          products
-      };
+        return {
+            products:
+            products
+        };
     };
 }
 

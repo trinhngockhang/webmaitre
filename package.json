@@ -6,9 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "run-client": "node client/server.js",
-    "build": "next build client",
+    "build": "next build",
     "run-server": "nodemon server",
-    "start": "cross-env NODE_ENV=development node client/server.js"
+    "start": "cross-env NODE_ENV=production node client/server.js"
   },
   "author": "anlancan",
   "license": "ISC",

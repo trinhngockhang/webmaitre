@@ -1,15 +1,11 @@
 import FeaturePageUi from "../FeaturePage/FeaturePage";
-import { SlideCarousel } from '../../common/content/SlideCarousel';
-import { SlideProAll } from '../../common/content/SlideProAll';
-import ProductOfCategory from "../../common/content/ProductOfCategory";
+import { SlideCarousel } from '../../common/content/Home/SlideCarousel';
+import { SlideProAll } from '../../common/content/Home/SlideProAll';
+import ProductOfCategory from "../../common/content/Home/ProductOfCategory";
 import { isEmptyOrUndefined } from "../../../../../shared/helper/check-data";
 import { libary } from "../../../../../static/js/library";
 
 export default class HomePageUi extends FeaturePageUi {
-    state = {
-        isLoading: false
-    }
-
     componentWillReceiveProps(nextProps) {
         if(nextProps.categorys !== this.props.categorys) {
             if(!isEmptyOrUndefined(nextProps.categorys)) {
