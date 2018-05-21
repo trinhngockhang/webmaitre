@@ -67,7 +67,7 @@ sub { bottom: -.25em; }
 
 sup { top: -.5em; }
 
-a { color: inherit; text-decoration: none; background-color: transparent; -webkit-text-decoration-skip: objects; -webkit-transition: all 200ms ease-out; -moz-transition: all 200ms ease-out; -o-transition: all 200ms ease-out; transition: all 200ms ease-out; }
+a { color: #23375d; text-decoration: none; background-color: transparent; -webkit-text-decoration-skip: objects; -webkit-transition: all 200ms ease-out; -moz-transition: all 200ms ease-out; -o-transition: all 200ms ease-out; transition: all 200ms ease-out; }
 a:hover { text-decoration: underline; }
 
 a:not([href]):not([tabindex]) { color: inherit; text-decoration: none; }
@@ -146,7 +146,7 @@ template { display: none; }
 
 .fr { float: right; }
 
-.all { float: left; width: 100%; }
+.all { float: left; width: 100%;margin-bottom: -77px; }
 
 .lazy { background: #fff url(../images/loading1.gif) center center no-repeat; min-width: 32px; min-height: 32px; }
 
@@ -154,7 +154,7 @@ template { display: none; }
 .hm-reponsive img { object-fit: cover; margin: auto; position: absolute; width: 100%; height: 100%; top: 0; left: 0; }
 
 .reponsive-img { position: relative; height: auto !important; width: 100%; padding-top: 56.25%; overflow: hidden; }
-.reponsive-img img { margin: auto; position: absolute; max-width: 100%; max-height: 100%; top: 0; left: 0; right: 0; bottom: 0; }
+.reponsive-img img { margin: auto; position: absolute; max-width: 100%; max-height: 100%; top: 0; left: 0; right: 0; bottom: 0;     width: 300px;}
 
 .alink-all { position: absolute; top: 0px; left: 0px; height: 100%; width: 100%; z-index: 10; }
 
@@ -182,7 +182,7 @@ template { display: none; }
 
 .page-item.active .page-link { background-color: #191919; border-color: #191919; }
 
-.header-middle { background-color: rgba(0, 0, 0, 0.9); z-index: 99999; position: fixed; top: 0; width: 100%; }
+.header-middle { background-color:#23375d; z-index: 99999; position: fixed; top: 0; width: 100%; }
 .header-middle .container { max-width: 1600px; padding-right: 30px; padding-left: 30px; position: relative; }
 @media only screen and (max-width: 992px) { .header-middle .container { padding-right: 15px; padding-left: 15px; } }
 
@@ -275,7 +275,7 @@ template { display: none; }
 .nav-mobie > ul > li .menu-title { padding-left: 5px; }
 .nav-mobie .sub-menu { display: none; }
 
-.footer-top { background: #000; color: #f1f1f1; padding: 30px 0px; }
+.footer-top { background: #23375d; color: #f1f1f1; padding: 105px 0px; }
 
 .heading-ft { font-size: 17px; margin-bottom: 10px; padding-bottom: 5px; width: 100%; text-transform: uppercase; color: #eaeaea; border-bottom: 1px solid #e1e1e1; }
 
@@ -290,18 +290,18 @@ template { display: none; }
 .ulLinks li { padding: 5px 0; }
 .ulLinks li a { color: #fff; font-size: 13px; }
 
-.footer-bottom { background: #222; color: #f1f1f1; padding: 20px 0px; }
+.footer-bottom { background: #061944; color: #f1f1f1; padding: 20px 0px; }
 
 .col-google { background: #fff; padding: 10px; }
 
 .sidebar-box-title { margin: 0; padding: 15px 15px; font-size: 15px; background: #e7e7e7; text-transform: uppercase; font-weight: 500; line-height: 1.1; }
 .sidebar-box-content { border: 1px solid #e7e7e7; border-top: 0; padding: 10px; background: #fff; }
 
-.home-pro-top { padding: 40px 0 30px; background: #101216; }
+.home-pro-top { padding: 40px 0 30px; background: #e9edf5; }
 
 .pro-list { padding: 30px 0 80px; list-style: none; }
-.pro-list .pro-item { position: relative; text-align: center; color: #fff; padding: 0 15px; display:inline-block ; width: 220px;}
-.pro-list .pro-item .bg-item { background: url(../images/listing-models.jpg) no-repeat left bottom #000; background-size: 100%; }
+.pro-list .pro-item { position: relative; text-align: center; color: #fff; padding: 0 15px; display:inline-block ; width: 249px;}
+.pro-list .pro-item .bg-item { background: #23375d; background-size: 100%; }
 .pro-list .pro-item .namepro { display: -webkit-box; -webkit-box-orient: vertical; overflow: hidden; -webkit-line-clamp: 1; padding: 15px 0; color: #fff; font-size: 14px; font-weight: 400; text-transform: capitalize; text-decoration: none; line-height: 18px; }
 .pro-list .pro-item .namepro:hover { color: #FF6600; }
 .pro-list .pro-item .reponsive-img { padding-top: 66.25%; }

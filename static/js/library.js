@@ -149,7 +149,7 @@ export function libary() {
             }
         
             $(".main-img-bg").css({
-                'height': windowHeight + "px",
+                'height': windowHeight-100 + "px",
                 'width': windowWidth + "px"
             });
         }
