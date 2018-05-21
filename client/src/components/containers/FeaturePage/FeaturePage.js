@@ -2,9 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Header from '../../common/header';
 import { Footer } from '../../common/footer';
+import { handleScript } from '../../../utils/handleScript';
+import { libary } from "../../../../../static/js/libary";
 
 export default class FeaturePageUi extends React.Component {
-    
+    componentDidMount() {
+        handleScript("https://sp.zalo.me/plugins/sdk.js");
+    }
 
     showHeader = () => <Header/>;
     showFooter = () => Footer();
@@ -28,6 +32,15 @@ export default class FeaturePageUi extends React.Component {
         )
     }
 
+    showZaloChatWidget = () => {
+        return (
+            <div>
+                <div class="zalo-chat-widget" data-oaid="355047501913473592" data-welcome-message="Rất vui khi được hỗ trợ bạn!" data-autopopup="0" data-width="350" data-height="420"></div>
+                <script id="script"></script>
+            </div>
+        )
+    }
+
     renderPage = () => {
         return (
             <div>
@@ -44,6 +57,7 @@ export default class FeaturePageUi extends React.Component {
                     {this.showFooter()}
                 </div>
                 {this.showScript()}
+                { this.showZaloChatWidget() }
             </div>
         )
     }
