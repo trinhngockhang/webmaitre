@@ -20,8 +20,25 @@ exports.findCategoryById = (data) => {
     }
 } 
 
-exports.findProductByName = (data) => {
-    
+exports.findProductDetailById = (data) => {
+    const api = {
+        method: 'post',
+        url: urlConfig.FIND_PRODUCT_BY_CUS_OPTION,
+        data: {
+            option: {
+                _id: data
+            }
+        }
+    }
+    return (dispatch) => {
+        handleRequest(api, (err, doc) => {
+            if(err) {
+                return dispatch({ type: actions.FIND_PRODUCT_DETAIL_BY_ID, status: apiRequestStatus.ERROR, product: {}})
+            }
+            let result = isEmptyOrUndefined(doc) || isEmptyOrUndefined(doc[0]) ? {} : doc[0];
+            return dispatch({ type: actions.FIND_PRODUCT_DETAIL_BY_ID, product: result, status: apiRequestStatus.SUCCESS})
+        })
+    }
 }
 
 exports.getCategory = () => {

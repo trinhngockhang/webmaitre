@@ -1,10 +1,11 @@
 import FeaturePageUi from "../FeaturePage/FeaturePage";
 import { BreadCrumb } from "../../common/content/Product/BreadCrumb";
-import { libary } from "../../../../../static/js/library";
+import { libary } from "../../../../../static/js/libary";
 import { ContentUnit } from "../../common/content/Product/ContentUnit";
 import FilterMenu from "../../common/content/Product/FilterMenu";
 import CateList from "../../common/content/Product/CateList";
 import { isEmptyOrUndefined } from "../../../../../shared/helper/check-data";
+import { handleScript } from '../../../utils/handleScript';
 
 export default class ProductPageUi extends FeaturePageUi {
     componentWillReceiveProps(nextProps) {

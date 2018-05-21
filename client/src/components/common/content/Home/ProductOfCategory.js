@@ -20,9 +20,9 @@ class ProductOfCategory extends Component {
                                 return (
                                     <div className="pro-item">
                                         <div className="bg-item">
-                                            <div className="namepro">{s.name}</div>
+                                            <div className="namepro">{isEmptyOrUndefined(s.name) ? "------" : s.name }</div>
                                             <div className="reponsive-img"> 
-                                                <a href=""><img src={s.url} className="lazy" alt={this.props.nameCategory + "giá rẻ"}/></a>   
+                                                <a href=""><img src={isEmptyOrUndefined(s.url) ? "/static/images/unknow.png" : s.url } className="lazy" alt={this.props.nameCategory + "giá rẻ"}/></a>   
                                             </div>
                                             <div className="price">Liên hệ</div>
                                             <div className="cut-price">0000000000</div>

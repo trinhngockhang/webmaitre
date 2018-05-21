@@ -3,9 +3,11 @@ import { SlideCarousel } from '../../common/content/Home/SlideCarousel';
 import { SlideProAll } from '../../common/content/Home/SlideProAll';
 import ProductOfCategory from "../../common/content/Home/ProductOfCategory";
 import { isEmptyOrUndefined } from "../../../../../shared/helper/check-data";
-import { libary } from "../../../../../static/js/library";
+import { libary } from "../../../../../static/js/libary";
+import { handleScript } from '../../../utils/handleScript';
 
 export default class HomePageUi extends FeaturePageUi {
+
     componentWillReceiveProps(nextProps) {
         if(nextProps.categorys !== this.props.categorys) {
             if(!isEmptyOrUndefined(nextProps.categorys)) {
@@ -13,7 +15,7 @@ export default class HomePageUi extends FeaturePageUi {
                     this.props.findProductByCategory(nextProps.categorys[i]._id)
                 }
             }
-        }
+        } 
     }
 
     showContent = () => {

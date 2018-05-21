@@ -1,10 +1,12 @@
 const express = require('express');
 const Router = express.Router();
 const apiConfig = require('../../shared/config/api-config');
-var { findProductByName,findProductByCategory,createProduct,getCategory} = require('../controllers/ProductController');
+var { findProductByCusOption,findProductByCategory,createProduct,getCategory} = require('../controllers/ProductController');
 const { readFolder } = require('../../shared/helper/readFolder');
 const fs = require('fs')
-Router.post(apiConfig.FIND_PRODUCTBYNAME, findProductByName);
+
+
+Router.post(apiConfig.FIND_PRODUCT_BY_CUS_OPTION, findProductByCusOption);
 
 Router.post(apiConfig.FIND_PRODUCTBYCATEGORY, findProductByCategory);
 
