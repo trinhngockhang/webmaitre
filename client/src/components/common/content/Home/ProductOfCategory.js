@@ -25,7 +25,7 @@ class ProductOfCategory extends Component {
                                                 <a href=""><img src={isEmptyOrUndefined(s.url) ? "/static/images/unknow.png" : s.url } className="lazy" alt={this.props.nameCategory + "giá rẻ"}/></a>   
                                             </div>
                                             <div className="price">Liên hệ</div>
-                                            <div className="cut-price">0000000000</div>
+                                            <div className="cut-price">0918 370 892</div>
                                         </div>
                                         <a href="" className="alink-all"></a>
                                     </div>
