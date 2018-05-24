@@ -19,10 +19,10 @@ class CateList extends Component {
                             this.props.libary()
                         }
                         return (
-                            <li className={"mix col-lg-4 col-md-6 col-sm-6 col-12 mb20 category_" + isEmptyOrUndefined(s.parent._id) ? "" : s.parent._id}>
+                            <li className={"mix col-lg-4 col-md-6 col-sm-6 col-12 mb20 category_"+ s.parent._id}>
                                 <div className="colum">
                                     <figure className="hm-reponsive">
-                                        <img src={isEmptyOrUndefined(s.url) ? "/static/images/unknow.png" : s.url } alt={isEmptyOrUndefined(s.parent.name) ? "" : s.parent.name + "chất lượng tốt tại Hà Nội"}/>
+                                        <img src={isEmptyOrUndefined(s.url) ? "/static/images/unknow.png" : s.url } alt={isEmptyOrUndefined(s.parent.name) ? "" : s.parent.name + " chất lượng tốt tại Hà Nội"}/>
                                     </figure>
                                     <div className="info-list">
                                         <p className="name">{isEmptyOrUndefined(s.name) ? "----" : s.name}</p>
@@ -31,7 +31,7 @@ class CateList extends Component {
                                         </p>
                                         <p className="detail-logo"><img src="/static/images/uploads/baby-g.png" alt=""/></p>
                                     </div>
-                                    <a className="alink-all" href=""></a>
+                                    <a className="alink-all" href={"/chitietsanpham?category=" + s.parent._id + "&product=" + s._id}></a>
                                 </div>
                             </li> 
                         )

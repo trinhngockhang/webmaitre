@@ -30,12 +30,14 @@ exports.findProductDetailById = (data) => {
             }
         }
     }
+    
     return (dispatch) => {
         handleRequest(api, (err, doc) => {
             if(err) {
                 return dispatch({ type: actions.FIND_PRODUCT_DETAIL_BY_ID, status: apiRequestStatus.ERROR, product: {}})
             }
             let result = isEmptyOrUndefined(doc) || isEmptyOrUndefined(doc[0]) ? {} : doc[0];
+            
             return dispatch({ type: actions.FIND_PRODUCT_DETAIL_BY_ID, product: result, status: apiRequestStatus.SUCCESS})
         })
     }
@@ -64,6 +66,7 @@ exports.findProductByCategory = (id) => {
         url: urlConfig.FIND_PRODUCTBYCATEGORY,
         data: { data: id }
     }
+    
     return (dispatch) => {
         handleRequest(api, (err, docs) => {
             if(err) {
@@ -71,7 +74,7 @@ exports.findProductByCategory = (id) => {
             }
             let result = isEmptyOrUndefined(docs) ? [] : docs;
 
-            return dispatch({ type: actions.FIND_PRODUCTBYCATEGORY, products: result, status: apiRequestStatus.SUCCESS })
+            return dispatch({ type: actions.FIND_PRODUCTBYCATEGORY, products: docs, status: apiRequestStatus.SUCCESS })
         })
     }
 }
