@@ -10,10 +10,9 @@ class ItemOwl extends React.Component {
 
     render() {
         let product = this.props.product;
-        
         return (
-            <div class="pdl-images" id="owl-pdl-images">
-                <a href="" data-fancybox="gallery" data-img={product.url} data-bigimg={product.url} > 
+            <div className="pdl-images" id="owl-pdl-images">
+                <a href="" data-fancybox="gallery" data-img={isEmptyOrUndefined(product.url) ? "/static/images/unknow.png" : product.url} data-bigimg={isEmptyOrUndefined(product.url) ? "/static/images/unknow.png" : product.url} > 
                     <img src={isEmptyOrUndefined(product.url) ? "/static/images/unknow.png" : product.url} alt={ "Mái che tốt nhất tại Hà Nội" + product.name} />
                 </a> 
 
