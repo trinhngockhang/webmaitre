@@ -29,7 +29,6 @@ class CateList extends Component {
                                         <p className="description">
                                             {s.description}
                                         </p>
-                                        <p className="detail-logo"><img src="/static/images/uploads/baby-g.png" alt=""/></p>
                                     </div>
                                     <a className="alink-all" href=""></a>
                                 </div>
