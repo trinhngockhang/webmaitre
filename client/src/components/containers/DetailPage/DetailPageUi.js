@@ -4,10 +4,12 @@ import { libary } from "../../../../../static/js/libary";
 import { BreadCrumb } from "../../common/content/Product/BreadCrumb";
 import ItemOwl from '../../common/content/Detail/ItemOwl';
 import { handleScript } from '../../../utils/handleScript';
+import Collection from '../../common/content/Detail/Collection';
+import RelateProduct from '../../common/content/Detail/RelateProduct';
 
 export default class DetailPageUi extends FeaturePageUi{
-    static async getInitialProps ({ query: { id } }) {
-        return { id }
+    static async getInitialProps ({ query: { category, product } }) {
+        return { category, product }
     } 
 
     componentDidMount() {
@@ -23,57 +25,9 @@ export default class DetailPageUi extends FeaturePageUi{
                 <div class="rowdetail">
                     <div class="container">
                         <div class="row">
-                        <aside class="pd-left mb15"> 
-                                <ItemOwl id={this.props.id}/>
-                                <div class="pdl-collection all mt20 text-center">
-                                    <div class="title-pdl"><span>Sản phẩm liên quan</span></div>
-                                    <div class="pdl-collection">
-                                        <ul class="row l">
-                                            <li class=" col-lg-4 col-md-6 col-sm-6 col-6">
-                                                <div class="pro-item">
-                                                    <figure class="reponsive-img"> 
-                                                        <a href=""><img src=" /static/images/uploads/pro01.png" class="lazy" alt=""/></a>   
-                                                    </figure> 
-                                                </div>
-                                            </li>
-                                            <li class=" col-lg-4 col-md-6 col-sm-6 col-6">
-                                                <div class="pro-item">
-                                                    <figure class="reponsive-img"> 
-                                                        <a href=""><img src=" /static/images/uploads/pro01.png" class="lazy" alt=""/></a>   
-                                                    </figure> 
-                                                </div>
-                                            </li>
-                                            <li class=" col-lg-4 col-md-6 col-sm-6 col-6">
-                                                <div class="pro-item">
-                                                    <figure class="reponsive-img"> 
-                                                        <a href=""><img src=" /static/images/uploads/pro01.png" class="lazy" alt=""/></a>   
-                                                    </figure> 
-                                                </div>
-                                            </li>
-                                            <li class=" col-lg-4 col-md-6 col-sm-6 col-6">
-                                                <div class="pro-item">
-                                                    <figure class="reponsive-img"> 
-                                                        <a href=""><img src=" /static/images/uploads/pro01.png" class="lazy" alt=""/></a>   
-                                                    </figure> 
-                                                </div>
-                                            </li>
-                                            <li class=" col-lg-4 col-md-6 col-sm-6 col-6">
-                                                <div class="pro-item">
-                                                    <figure class="reponsive-img"> 
-                                                        <a href=""><img src=" /static/images/uploads/pro01.png" class="lazy" alt=""/></a>   
-                                                    </figure> 
-                                                </div>
-                                            </li>
-                                            <li class=" col-lg-4 col-md-6 col-sm-6 col-6">
-                                                <div class="pro-item">
-                                                    <figure class="reponsive-img"> 
-                                                        <a href=""><img src=" /static/images/uploads/pro01.png" class="lazy" alt=""/></a>   
-                                                    </figure> 
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
+                            <aside class="pd-left mb15"> 
+                                <ItemOwl id={this.props.product}/>
+                                <Collection categoryId={this.props.category}/>
                             </aside>
                             <aside class="pd-right mb15">
                                 <a class="collection" href=""><img src="/static/images/uploads/g-shock.png" alt=""/></a>
@@ -122,65 +76,7 @@ export default class DetailPageUi extends FeaturePageUi{
                         </div>
                     </div>                    
                 </div>
-                <section class="related_product">
-                    <div class="container"> 
-                        <div class="tpg-txt text-center"><a href="">Phụ Kiện</a></div> 
-                        <ul class="pro-list row pro-list-cate" >
-                            <li class=" col-lg-3 col-md-6 col-sm-6 col-12" >
-                                <div class="pro-item ">
-                                    <div class="bg-item">
-                                        <div class="namepro">G-STEEL Limited Edition</div>
-                                        <div class="reponsive-img"> 
-                                            <a href=""><img src=" /static/images/uploads/pro01.png" class="lazy" alt=""/></a>   
-                                        </div> 
-                                        <div class="price">4.202.100đ</div>
-                                        <div class="cut-price">Giá đã giảm 10%</div>
-                                    </div>
-                                    <a href="" class="alink-all"></a>
-                                </div>
-                            </li>
-                           <li class=" col-lg-3 col-md-6 col-sm-6 col-12" >
-                                <div class="pro-item ">
-                                    <div class="bg-item">
-                                        <div class="namepro">G-STEEL Limited Edition</div>
-                                        <div class="reponsive-img"> 
-                                            <a href=""><img src=" /static/images/uploads/pro02.png" class="lazy" alt=""/></a>   
-                                        </div>
-                                        <div class="price">4.202.100đ</div>
-                                        <div class="cut-price">Giá đã giảm 10%</div>
-                                    </div>
-                                    <a href="" class="alink-all"></a>
-                                </div>
-                            </li>
-                           <li class=" col-lg-3 col-md-6 col-sm-6 col-12" >
-                                <div class="pro-item ">
-                                    <div class="bg-item">
-                                        <div class="namepro">G-STEEL Limited Edition</div>
-                                        <div class="reponsive-img"> 
-                                            <a href=""><img src=" /static/images/uploads/pro03.png" class="lazy" alt=""/></a>   
-                                        </div>
-                                        <div class="price">4.202.100đ</div>
-                                        <div class="cut-price">Giá đã giảm 10%</div>
-                                    </div>
-                                    <a href="" class="alink-all"></a>
-                                </div>
-                            </li>
-                            <li class=" col-lg-3 col-md-6 col-sm-6 col-12" >
-                                <div class="pro-item ">
-                                    <div class="bg-item">
-                                        <div class="namepro">G-STEEL Limited Edition</div>
-                                        <div class="reponsive-img"> 
-                                            <a href=""><img src=" /static/images/uploads/pro01.png" class="lazy" alt=""/></a>   
-                                        </div>
-                                        <div class="price">4.202.100đ</div>
-                                        <div class="cut-price">Giá đã giảm 10%</div>
-                                    </div>
-                                    <a href="" class="alink-all"></a>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </section>
+                <RelateProduct/>
             </section>
         </main>
         )
