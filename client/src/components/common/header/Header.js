@@ -21,7 +21,7 @@ class Header extends Component {
                         <div className="container">
                             <div className="logo"> 
                                 <h1 className="texth1">Thiết kế websiter chuyên nghiệp</h1>
-                                <a href="index.html" title=""><img src="/static/images/logo.png" className="" alt=""/></a>  
+                                <a href="#" title=""><img src="/static/images/logo.png" className="" alt=""/></a>  
                             </div> 
                             <div className="nav-btn-show sidebar-toggle hidden-xl hidden-lg fr" state="hide"><i className="fa fa-bars" aria-hidden="true"></i></div>
                             <div className="header-search">

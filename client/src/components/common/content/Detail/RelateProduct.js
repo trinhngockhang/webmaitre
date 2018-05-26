@@ -22,8 +22,8 @@ class RelateProduct extends React.Component {
                                                     <div className="reponsive-img"> 
                                                         <a href=""><img src={isEmptyOrUndefined(s.url) ? "/static/images/unknow.png" : s.url} className="lazy" alt=""/></a>   
                                                     </div>
-                                                    <div className="price">4.202.100đ</div>
-                                                    <div className="cut-price">Giá đã giảm 10%</div>
+                                                    <p className="price">Liên Hệ : 0986 370 892 </p>
+                                                    {/* <div className="cut-price"></div> */}
                                                 </div>
                                                 <a href="" className="alink-all"></a>
                                             </div>

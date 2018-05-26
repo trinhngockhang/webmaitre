@@ -8,9 +8,9 @@ export const SlideCarousel = (props) => {
                     <div className="carousel-caption"> 
                         <div className="overlay-lower" >
                             <h4 className="ls-l-1" >Hoàng Quý</h4> 
-                            <span>Chuyên thi công mái che</span> 
+                            <span>Chuyên thi công mái che - Nhôm kính XINGFA</span> 
                         </div>
-                        <a href="/product" className="btn btn-default" tabindex="0">Tìm hiểu</a>
+                        <a href="/product" className="btn btn-default" tabindex="0">Tìm hiểu thêm sản phẩm</a>
                     </div> 
                 </div>
                 <div id="item1" className="item" >  
@@ -20,7 +20,7 @@ export const SlideCarousel = (props) => {
                         <div className="overlay-lower">
                             <b>Nhiều mẫu mã</b>
                         </div>
-                        <a href="/product" className="btn btn-default" tabindex="0">Tìm hiểu</a>
+                        <a href="/product" className="btn btn-default" tabindex="0">Tìm hiểu thêm sản phẩm</a>
                     </div> 
                 </div>
                 </div>    

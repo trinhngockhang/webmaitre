@@ -146,7 +146,7 @@ template { display: none; }
 
 .fr { float: right; }
 
-.all { float: left; width: 100%;margin-bottom: -77px; }
+.all { float: left; width: 100%;margin-bottom: 15px; }
 
 .lazy { background: #fff url(../images/loading1.gif) center center no-repeat; min-width: 32px; min-height: 32px; height: 300px;}
 
@@ -308,7 +308,7 @@ template { display: none; }
 .pro-list .pro-item .namepro:hover { color: #FF6600; }
 .pro-list .pro-item .reponsive-img { padding-top: 66.25%; }
 .pro-list .pro-item .lazy { background: transparent; }
-.pro-list .pro-item .price { font-size: 23px; letter-spacing: 0.5px; display: -webkit-box; -webkit-box-orient: vertical; overflow: hidden; -webkit-line-clamp: 1; padding: 20px 0 5px 0; }
+.pro-list .pro-item .price { font-size: 13px; font-weight: bold;  letter-spacing: 0.5px; display: -webkit-box; -webkit-box-orient: vertical; overflow: hidden; -webkit-line-clamp: 1; padding: 20px 0 5px 0; }
 .pro-list .pro-item .cut-price { font-size: 14px; display: -webkit-box; -webkit-box-orient: vertical; overflow: hidden; -webkit-line-clamp: 1; padding: 0 0 15px 0; }
 
 .home-new { background: #333; padding: 40px 0 50px; }
@@ -368,7 +368,7 @@ ul.pro-list-cate li .pro-item .bg-item .namepro { color: #333; }
 .button-buy a:nth-child(3) { flex: 0 0 100%; max-width: 100%; }
 @media (max-width: 991px) { .button-buy a { flex: 0 0 100%; max-width: 100%; margin: 0 0 10px 0 !important; } }
 
-.btn-black { background: #000; padding: 34px 40px; color: white; border: solid 1px #000; text-transform: uppercase; transition: background 0.5s; border-radius: 0; }
+.btn-black { background: #0000ff; padding: 34px 40px; color: white; border: solid 1px #000; text-transform: uppercase; transition: background 0.5s; border-radius: 0; }
 
 .btn-where-to-buy { color: #000; text-transform: uppercase; padding: 20px 20px; font-weight: bold; }
 

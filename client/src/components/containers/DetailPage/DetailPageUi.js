@@ -7,10 +7,10 @@ import { handleScript } from '../../../utils/handleScript';
 import Collection from '../../common/content/Detail/Collection';
 import RelateProduct from '../../common/content/Detail/RelateProduct';
 
-export default class DetailPageUi extends FeaturePageUi{
-    static async getInitialProps ({ query: { category, product } }) {
+export default class DetailPageUi extends FeaturePageUi {
+    static async getInitialProps({ query: { category, product } }) {
         return { category, product }
-    } 
+    }
 
     componentDidMount() {
         libary();
@@ -19,66 +19,61 @@ export default class DetailPageUi extends FeaturePageUi{
 
     showContent = () => {
         return (
-            <main class="content-main pt100">  
-            { BreadCrumb() }
-            <section class="main-detail">
-                <div class="rowdetail">
-                    <div class="container">
-                        <div class="row">
-                            <aside class="pd-left mb15"> 
-                                <ItemOwl id={this.props.product}/>
-                                <Collection categoryId={this.props.category}/>
-                            </aside>
-                            <aside class="pd-right mb15">
-                                <a class="collection" href=""><img src="/static/images/uploads/g-shock.png" alt=""/></a>
-                                <h1 class="pName"> GST-B100XA-1A</h1>
-                                <div class="price">
-                                    <span class="old-price">GNY: 3.960.000 đ</span>
-                                    <span class="curr-price">3.960.000 đ</span>
-                                    <span class="status ">Đã giảm giá 20 %</span>
-                                </div>
-                                <div class="button-buy clear">
-                                    <a href="" class="btn btn-black mb10">Mua ngay</a>
-                                    <a href="" title="" class="btn buy_now mb10"><b>Đặt hàng ngay - giao tận nơi  </b><span> Thanh toán tại nhà</span></a>
-                                    <a href="" class="btn btn-where-to-buy  mb10">Sẵn hàng tại 46 Lê Thái Tổ.</a>
-                                 </div>
-                                <div class="product-info mb20">
-                                    <div class="product-info-row">
-                                        <h3 class="pd-title">Chi tiết sản phẩm</h3>
-                                        <div class="bg-article expand" >
-                                            <p>Bắt đầu với G-SHOCK là nhãn hiệu liên tục tạo nên những tiêu chuẩn mới về độ bền cho đồng hồ, giờ đây G-STEEL, một dòng đồng hồ với "cấu trúc bảo vệ theo lớp" mới.</p>
-                                            <p>
-                                            Sử dụng hai loại vật liệu khác nhau cho gờ tạo nên một cấu trúc hai lớp giúp bổ sung thêm khả năng chống va đập mới. Bốn mẫu đều sử dụng chất liệu thép không gỉ ở lớp trên và nhựa hấp thụ va đập ở lớp dưới. Khi lớp trên sử dụng chất liệu nhựa thì lớp dưới sẽ sử dụng nhựa tinh xảo để tạo lớp đệm chống lại các tác động va đập lên lớp </p>
-                                            <p>Tính năng chuyển kim tạm thời dịch chuyển kim qua một bên khi nhấn nút để dễ đọc các nội dung hiển thị trên màn hình kỹ thuật số.</p>
-                                            <p>>Dây đeo bằng uretan mềm giúp vừa khít xung quanh toàn bộ vỏ tạo thành các đường chạy mềm mại. Điều này cũng giúp giảm độ căn dây đeo và giúp vừa khít vào cổ tay mang lại cảm giác thoải mái. Kết quả là các chức năng hữu ích và có tính ứng dụng cao được gói gọn trong một kiểu dáng duy trì sự thoải mái ngay cả sau thời gian dài sử dụng.</p>
-                                            <p>Từ chức năng cho tới thiết kế, mọi thứ về các mẫu GULFMASTER mới này hỗ trợ các hoạt động trên biển và trong môi trường khắc nghiệt.</p>
-                                        </div> 
+            <main class="content-main pt100">
+                {BreadCrumb()}
+                <section class="main-detail">
+                    <div class="rowdetail">
+                        <div class="container">
+                            <div class="row">
+                                <aside class="pd-left mb15">
+                                    <ItemOwl id={this.props.product} />
+                                    <Collection categoryId={this.props.category} />
+                                </aside>
+                                <aside class="pd-right mb15">
+                                    <a class="collection" href=""><img src="/static/images/uploads/g-shock.png" alt="" /></a>
+                                    <h1 class="pName">Sản phẩm của hoàng quý</h1>
+                                    <div class="price">
+                                        <span class="old-price">Liên Hệ: 0918 370 892 &nbsp;&nbsp;&nbsp;&nbsp; 0986 370 892 &nbsp;&nbsp;&nbsp;&nbsp; 0976 947 892<br />
+                                            <br />
+                                        </span>
+                                        {/* <span class="curr-price">3.960.000 đ</span> */}
+
                                     </div>
-                                    <div class="product-info-row">
-                                        <h3 class="pd-title">Quà tặng đi kèm</h3>
-                                        <div class="bg-article expand" >
-                                            <p>Thẻ thay pin miễn phí trọn đời</p>
-                                            <p>Bất cứ khi nào đồng hồ G-shock của bạn hết pin, hãy mang ngay đến Bello Lê Thái Tổ, 46 Lê Thái Tổ, HK HN để được thay pin miễn phí nha.s</p>
-                                            <p>Hiện có sáu màu sắc rực rỡ cho bạn chọn lựa: Đen, trắng, đỏ, xanh dương, xanh lá, cam. Vòng tay cao su bề mặt nhám của Bello với logo G-shock dập chìm cực chất.</p>
+                                    <div class="button-buy clear">
+                                        <a href="https://www.facebook.com/maiche.hoangquy?ref=br_rs" class="btn btn-black mb10">Liên hệ qua Facebook</a>
+                                        <a href="tel:+84976 947 892 " title="" class="btn buy_now mb10"><b>Đặt làm ngay</b><span> Thanh toán tại nhà hoặc qua thẻ ngân hàng</span></a>
+                                        <a href="" class="btn btn-where-to-buy  mb10">Sẵn hàng tại 30 Lê Thúc Hoạch,TP.HCM.</a>
+                                    </div>
+                                    <div class="product-info mb20">
+                                        <div class="product-info-row">
+                                            <h3 class="pd-title">Thông tin sản phẩm</h3>
+                                            <div class="bg-article expand" >
+                                                <p> Mái Xếp - Nhôm Kính HOÀNG QUÝ - Chuyên thi công các công trình:
+                                                </p>
+                                                <p>✓ Mái xếp, Mái hiên, Mái che cho Cửa hàng ,sân vườn  giá rẻ tại Hồ Chí Minh</p>
+                                                <p>✓ Nhôm kính Xingfa cho Nhà ở,công trình tiệm hàng với giá rẻ tại Hồ Chí Minh</p>
+                                                <p>- Chuyên cung cấp và lắp ráp thi công các loại mái xếp di động, mái vòm, mái xếp, mái nhựa, mái rủ, mái bạt chất lượng cao giá thành hợp lý….  với chiều dày phát triển trên 10 năm qua, quý khách hoàn toàn yên tâm khi sử dụng dịch vụ của chúng tôi, Mái xếp Hoàng Quý chính là sự lựa chọn hoàn hảo tô điểm cho sự sang trọng và đẳng cấp cho ngôi nhà bạn hay cơ sở kinh doanh uy tín của quý vị</p>
+                                                <p>- Chúng tôi đã và đang thi công lắp ráp rất nhiều sản phẩm về mái xếp  tại tất cả các tỉnh phía Nam với đội ngũ nhân viên kinh nghiệm lâu năm thi công chuyên nghiệp, luôn lắng nghe, tiếp thu ý kiến và cải thiện chất lượng sản phẩm mái xếp và cửa kính xingfa nhằm đem đến sự hài lòng cho mỗi khách hàng.</p>
+                                                
+                                            </div>
+                                        </div>
                                         
-                                        </div>  
-                                    </div>  
-                                    <div class="product-info-row">
-                                        <h3 class="pd-title">Kích thước / Trọng lượng</h3>
-                                        <div class="bg-article expand" >
-                                            <p>Kích thước: 58.1 × 53.8 × 14.1mm</p>
-                                            <p>Tổng trọng lượng: 104g</p> 
-                                        </div> 
-                                        
-                                    </div>  
-                                </div>
-                            </aside>
+                                        {/* <div class="product-info-row">
+                                            <h3 class="pd-title">Kích thước / Trọng lượng</h3>
+                                            <div class="bg-article expand" >
+                                                <p>Kích thước: 58.1 × 53.8 × 14.1mm</p>
+                                                <p>Tổng trọng lượng: 104g</p>
+                                            </div>
+
+                                        </div> */}
+                                    </div>
+                                </aside>
+                            </div>
                         </div>
-                    </div>                    
-                </div>
-                <RelateProduct/>
-            </section>
-        </main>
+                    </div>
+                    <RelateProduct />
+                </section>
+            </main>
         )
     }
 }
