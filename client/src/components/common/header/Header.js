@@ -31,7 +31,7 @@ class Header extends Component {
                             <SearchBox/>
                             </div> 
                             <div className="nav-desktop">
-                                <ul className="navmenu">
+                                <ul className="navmenu" >
                                     {/* <li className="m-relative"> 
                                         <a className="a-open-down" href=""></a>
                                         <a href="">Đồng hồ</a> 
@@ -47,7 +47,7 @@ class Header extends Component {
                                     {
                                         categorys.map((s, idx) => {
                                             return (
-                                                <li key={idx}> <a href="">{s.name}</a> </li> 
+                                                <li key={idx}> <a href="/product">{s.name}</a> </li> 
                                             )
                                         })
                                     }

@@ -10,7 +10,7 @@ export default class FeaturePageUi extends React.Component {
         handleScript("https://sp.zalo.me/plugins/sdk.js");
     }
 
-    showHeader = () => <Header/>;
+    showHeader = () => <Header />;
     showFooter = () => Footer();
     showContent = () => {
         return (
@@ -21,12 +21,12 @@ export default class FeaturePageUi extends React.Component {
     showScript = () => {
         return (
             <div>
-              <div className="back-to-top"> <a href="javascript:;"> <span className="fa fa-angle-up fa-2x"></span></a></div>     
-                <script type="text/javascript" src="/static/js/jquery.min.js"></script>    
+                <div className="back-to-top"> <a href="javascript:;"> <span className="fa fa-angle-up fa-2x"></span></a></div>
+                <script type="text/javascript" src="/static/js/jquery.min.js"></script>
                 <script src="/static/js/html5shiv.min.js"></script>
                 <script src="/static/js/respond.min.js"></script>
-                <script type="text/javascript" src="/static/js/bootstrap.min.js"></script>       
-                <script type="text/javascript" src="/static/js/plugins.js"></script>   
+                <script type="text/javascript" src="/static/js/bootstrap.min.js"></script>
+                <script type="text/javascript" src="/static/js/plugins.js"></script>
 
             </div>
         )
@@ -44,20 +44,25 @@ export default class FeaturePageUi extends React.Component {
     renderPage = () => {
         return (
             <div>
+                <div>
+                    <a className="mbscreenphone phonelink" href="tel:+84976947892"><img className="phoneicon" style={{ marginLeft: "60px;" }} src="http://cliparts.co/cliparts/piq/8Xp/piq8XpbbT.png" />
+                        {/* <p style={{ fontSize: "16px", fontWeight: "bold ", marginLeft: "46px" }}> Gọi Ngay</p> */}
+                    </a>
+                </div>
                 <div className="sidebar-overlay"></div>
-                <aside id="sidebar" className="sidebar sidebar-fixed-left" role="navigation"> 
+                <aside id="sidebar" className="sidebar sidebar-fixed-left" role="navigation">
                     <div className="header-sidebar">
                         <span>Danh Mục menu</span>
                     </div>
-                    <div className="nav-mobie"> </div> 
+                    <div className="nav-mobie"> </div>
                 </aside>
                 <div className="Wrapper">
-                    {this.showHeader()}   
-                    {this.showContent()}   
+                    {this.showHeader()}
+                    {this.showContent()}
                     {this.showFooter()}
                 </div>
                 {this.showScript()}
-                { this.showZaloChatWidget() }
+                {this.showZaloChatWidget()}
             </div>
         )
     }
@@ -65,7 +70,7 @@ export default class FeaturePageUi extends React.Component {
     render() {
         return (
             <div>
-                { this.renderPage()}
+                {this.renderPage()}
             </div>
         )
     }

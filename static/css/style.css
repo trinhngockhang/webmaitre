@@ -182,7 +182,7 @@ template { display: none; }
 
 .page-item.active .page-link { background-color: #191919; border-color: #191919; }
 
-.header-middle { background-color:#23375d; z-index: 99999; position: fixed; top: 0; width: 100%; }
+.header-middle { opacity: 0.9; background-color:#23375d; z-index: 99999; position: fixed; top: 0; width: 100%; }
 .header-middle .container { max-width: 1600px; padding-right: 30px; padding-left: 30px; position: relative; }
 @media only screen and (max-width: 992px) { .header-middle .container { padding-right: 15px; padding-left: 15px; } }
 
@@ -481,3 +481,33 @@ ul.pro-list-cate li .pro-item .bg-item .namepro { color: #333; }
 .cart-totals li span { display: table-cell; width: 50%; border-left: 1px solid #eaeaea; color: #FF0004; text-align: right; }
 
 /*# sourceMappingURL=style.css.map */
+
+
+
+.phonelink{
+    position: fixed;
+    margin-left: 60px;
+    bottom: 45px; 
+    right: 0; 
+    
+   
+}
+.phoneicon{
+    width: 50px; 
+    height: 50px;
+}
+@media screen and (max-width: 480px){
+    .lgscreenphone{
+        display: none; }
+    .mbscreenphone{
+        display: block; 
+    }
+}
+@media screen and (min-width: 481px){
+    .mbscreenphone{
+        display: none;
+    }
+    .lgscreenphone{
+        display: block;
+    }
+}

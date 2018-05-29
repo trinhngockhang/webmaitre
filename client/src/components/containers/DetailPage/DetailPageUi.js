@@ -15,6 +15,7 @@ export default class DetailPageUi extends FeaturePageUi {
     componentDidMount() {
         libary();
         handleScript("https://sp.zalo.me/plugins/sdk.js");
+
     }
 
     showContent = () => {
@@ -30,18 +31,23 @@ export default class DetailPageUi extends FeaturePageUi {
                                     <Collection categoryId={this.props.category} />
                                 </aside>
                                 <aside class="pd-right mb15">
-                                    <a class="collection" href=""><img src="/static/images/uploads/g-shock.png" alt="" /></a>
+                                    {/* <a class="collection" href=""><img src="/static/images/uploads/g-shock.png" alt="" /></a> */}
+                                    
                                     <h1 class="pName">Sản phẩm của hoàng quý</h1>
                                     <div class="price">
-                                        <span class="old-price">Liên Hệ: 0918 370 892 &nbsp;&nbsp;&nbsp;&nbsp; 0986 370 892 &nbsp;&nbsp;&nbsp;&nbsp; 0976 947 892<br />
+                                        <span class="old-price"> 
+                                        <img src="http://www.justgoholidayz.com/pic/call.png" style={{width:"50px" , height:"40px"}}/>Liên Hệ : 
+                                        <br/><br/><br/>- 0918 370 892 <br/><br/>- 0986 370 892 <br/><br/>- 0976 947 892<br />
                                             <br />
                                         </span>
-                                        {/* <span class="curr-price">3.960.000 đ</span> */}
+                                        
 
                                     </div>
+                                   
+                                   
                                     <div class="button-buy clear">
                                         <a href="https://www.facebook.com/maiche.hoangquy?ref=br_rs" class="btn btn-black mb10">Liên hệ qua Facebook</a>
-                                        <a href="tel:+84976 947 892 " title="" class="btn buy_now mb10"><b>Đặt làm ngay</b><span> Thanh toán tại nhà hoặc qua thẻ ngân hàng</span></a>
+                                        <a href="tel:+84976947892 " title="" class="btn buy_now mb10"><b>Đặt làm ngay</b><span> Thanh toán tại nhà hoặc qua thẻ ngân hàng</span></a>
                                         <a href="" class="btn btn-where-to-buy  mb10">Sẵn hàng tại 30 Lê Thúc Hoạch,TP.HCM.</a>
                                     </div>
                                     <div class="product-info mb20">
