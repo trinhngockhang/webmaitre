@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import { shouldUpdate } from 'utils/shallowRender';
 
 function mapStateToProps(state) {
     return {
@@ -8,6 +9,13 @@ function mapStateToProps(state) {
 }
 
 class FilterMenu extends Component {
+    shouldComponentUpdate(nextProps, nextState) {
+        if(shouldUpdate(nextProps.categorys, this.props.categorys)) {
+            return true;
+        }
+        return false;
+    }
+
     render() {
         let categorys = this.props.categorys;
         return (

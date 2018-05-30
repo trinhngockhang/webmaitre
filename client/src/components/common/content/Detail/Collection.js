@@ -2,10 +2,18 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { findProductByCategory } from '../../../../utils/request';
 import { isEmptyOrUndefined } from '../../../../../../shared/helper/check-data'; 
+import { shouldUpdate } from '../../../../utils/shallowRender';
 
 class Collection extends React.Component {
     componentWillMount() {
         this.props.findProductByCategory(this.props.categoryId);
+    }
+
+    shouldComponentUpdate(nextProps, nextState) {
+        if(shouldUpdate(nextProps.products, this.props.products)) {
+            return true;
+        }
+        return false;
     }
 
     render() {

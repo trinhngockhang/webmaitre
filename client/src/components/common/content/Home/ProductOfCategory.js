@@ -1,8 +1,15 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux'
 import { isEmptyOrUndefined } from '../../../../../../shared/helper/check-data';
-
+import { shouldUpdate } from '../../../../utils/shallowRender';
 class ProductOfCategory extends Component {
+    shouldComponentUpdate(nextProps, nextState) {
+        if(shouldUpdate(nextProps.products, this.props.products)) {
+            return true;
+        }
+        return false;
+    }
+    
     render() {
         let products = this.props.products;
         return (

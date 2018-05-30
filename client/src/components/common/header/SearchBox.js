@@ -14,6 +14,10 @@ class SearchBox extends Component {
         console.log(searchKeyWord);
     }
 
+    shouldComponentUpdate(nextProps, nextState) {
+        return fasle;
+    }
+
     render() {
         return (
             <div className="dropdown-menu dropdown-search">
