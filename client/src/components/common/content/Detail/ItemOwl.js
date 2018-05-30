@@ -2,10 +2,18 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { findProductDetailById } from '../../../../utils/request';
 import { isEmptyOrUndefined } from '../../../../../../shared/helper/check-data';
+import _ from 'lodash';
 
 class ItemOwl extends React.Component {
     componentDidMount() {
         this.props.findProductDetailById(this.props.id);
+    }
+
+    shouldComponentUpdate(nextProps, nextState) {
+        if(!_.isEqual(nextProps.product, this.props.product)) {
+            return true;
+        }
+        return false;
     }
 
     render() {

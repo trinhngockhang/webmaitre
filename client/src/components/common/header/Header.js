@@ -1,6 +1,8 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import SearchBox from "./SearchBox";
 import { Loadfile } from './Loadfile';
+import { shouldUpdate } from '../../../utils/shallowRender';
+import ProgressBar from '../common/ProgressBar';
 
 class Header extends Component {
 
@@ -8,14 +10,21 @@ class Header extends Component {
         this.props.getCategory();
     }
 
+    shouldComponentUpdate(nextProps, nextState) {
+        if(shouldUpdate(nextProps.categorys, this.props.categorys)) {
+            return true;
+        }
+        return false;
+    }
+
     render() {
-        let categorys = this.props.categorys;
-      
+        let categorys = this.props.categorys;      
         return (
-            <div>
+            <Fragment>
                 {
                     Loadfile()
                 }
+                <ProgressBar/>
                 <header id="header" className="">
                     <section className="header-middle">
                         <div className="container">
@@ -56,7 +65,7 @@ class Header extends Component {
                         </div>
                     </section> 
                 </header>
-            </div>
+            </Fragment>
         )
     }
 }

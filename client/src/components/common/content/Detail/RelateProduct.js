@@ -1,8 +1,16 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { isEmptyOrUndefined } from '../../../../../../shared/helper/check-data';
+import { shouldUpdate } from '../../../../utils/shallowRender';
 
 class RelateProduct extends React.Component {
+    shouldComponentUpdate(nextProps, nextState) {
+        if(shouldUpdate(nextProps.products, this.props.products)) {
+            return true;
+        }
+        return false;
+    }
+
     render() {
         let products = this.props.products;
         console.log('products', products)
